@@ -1,30 +1,36 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
     font: normal normal 1em 'Arial';
     text-decoration: none;
+}
+a{
     color: white;
 }
 body{
-    display: flex;
-    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 99vw;
 }
 #header{
     display: flex;
+    position: absolute;
     place-items: center;
-    background-color: rgba(0, 0, 0, 0.973);
+    background-color: rgba(24, 24, 24, 0.800);
+    border-radius: 0px 20px 20px 0px;
 
-    left: -5em;
-    width: 5vw;
+    width: 6%;
     height: 100vh;
-    transform: translateX(0);
-    transition: transform 1s;
+    z-index: 1;
+    transform: translateX(-4.5em);
+    transition: transform 2s;
 }
 #header:hover{
-    transform: translateX(4em);
-    transition: transform 1s;
+    transform: translateX(0);
+    transition: transform 1.5s;
 }
 .header-container{
     display: flex;
@@ -42,12 +48,69 @@ body{
     width: 100%;
     height: 15%;
 }
+.header-icons span:hover{
+    color: rgb(110, 110, 255);
+}
 .material-symbols-outlined{
     font-size: 35px;
 }
 /*------------Header------------*/
 #main{
-    background-image: linear-gradient(180deg, rgb(70, 70, 255), rgb(70, 70, 255));
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    width: 99.2vw;
     height: 100vh;
 }
+#special-offer{
+    position: relative;
+    height: 100%;
+}
+#special-offer img{
+    opacity: 0;
+    transition: opacity 1200ms;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#special-offer .main-image{
+    opacity: 1;
+}
+.text-offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.text-offer h1{
+    font: normal bold 4em 'Inter', sans-serif;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.418);
+    text-transform: uppercase;
+    color: white;
+    top: 80%;
+    
+    position: absolute;
+    z-index: 1;
+}
+/*------------main 1-------------*/
+#main-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+#secondary-offers{
+    border: 1px solid red;
+    color: rgb(0, 0, 0);
+    
+    width: 60vw;
+    height: 100vh;
+}
+/*------------main 2-------------*/
