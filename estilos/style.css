@@ -49,7 +49,7 @@ body{
     height: 15%;
 }
 .header-icons span:hover{
-    color: rgb(110, 110, 255);
+    color: rgb(255, 0, 0);
 }
 .material-symbols-outlined{
     font-size: 35px;
@@ -104,13 +104,50 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px;
+    padding: 100px 80px;
 }
 #secondary-offers{
-    border: 1px solid red;
     color: rgb(0, 0, 0);
     
-    width: 60vw;
-    height: 100vh;
+    display: flex;
+    width: 65vw;
+    height: 80vh;
+}
+.offer-1, .offer-2{
+    justify-content: space-between;
+    width: 50%;
+}
+.offer-1{
+    background: url("../imagens/Eletric/Carregador-de-Carro-Elétrico-01.webp") no-repeat center right 40%;
+    background-size: cover;
+
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.300);
+}
+.offer-2{
+    background-color: rgba(15, 15, 15, 0.010);
+}
+.offer-2 p{
+    font: normal normal 2.2em 'Inter', sans-serif;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.300);
+    line-height: 1.4em;
+    padding: 0px 40px;
+    text-align: start;
+}
+.offer-2 a h3{
+    font: normal normal 2.2em 'Inter', sans-serif;
+    margin-top: 4em;
+    text-align: center;
+    color: black;
+}
+.offer-2 h3:hover{
+    color: red;
 }
 /*------------main 2-------------*/
+#main-3{
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid red;
+    height: 100vh;
+}
