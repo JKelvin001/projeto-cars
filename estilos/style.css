@@ -148,6 +148,64 @@ body{
     display: flex;
     flex-direction: column;
 
-    border: 1px solid red;
-    height: 100vh;
+    width: 99.2vw;
+    height: 250vh;
+}
+.multi-blocks{
+    display: flex;
+    flex-direction: row;
+
+    height: 50%;
+}
+#multi-offers{
+    width: 50%;
+    height: 100%;
+}
+#multi-offers img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.multi-offers-2 img{
+    transform: scaleX(-1);
+    object-position: 30% center;
+}
+.multi-offers-1 img{
+    object-position: 10%;
+}
+/*-----------main 3-------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    width: 99.2vw;
+    height: 40vh;
+    background-image: linear-gradient(180deg, rgb(45, 45, 45), rgb(35, 35, 35));
+}
+#info-area{
+    width: 50%;
+
+    text-align: start;
+    color: white;
+}
+#info-area h2{
+    line-height: 3em;
+    padding-left: 20px;
+}
+#github-link{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.60);
+    font: normal normal 1.4em 'Inter', sans-serif;
+    color: white;
+    padding: 10px;
+}
+#github-link a{
+    color: red;
+}
+#github-link a:hover{
+    color: rgb(255, 72, 0);
 }
