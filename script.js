@@ -16,10 +16,9 @@ function nextImage(){
     images[currentImageIndex]
         .classList.add("main-image")
     
-}    
+}
 function start(){
     setInterval(() => {nextImage()}, time)
 
 }
-
 window.addEventListener("load", start)
