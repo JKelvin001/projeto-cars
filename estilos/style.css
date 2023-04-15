@@ -53,8 +53,8 @@ body{
     width: 100%;
     height: 15%;
 }
-.header-icons span:hover{
-    color: rgb(255, 0, 0);
+.header-icons:hover{
+    background-color: rgba(255, 255, 255, 0.100);
 }
 .material-symbols-outlined{
     font-size: 35px;
@@ -120,9 +120,10 @@ body{
 }
 #secondary-offers{
     color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 
     display: flex;
-    width: 65vw;
+    width: 55vw;
     height: 80vh;
 }
 .offer-1, .offer-2{
@@ -140,28 +141,29 @@ body{
     background-color: rgba(15, 15, 15, 0.034);
 }
 .secondary-text{
-    height: 60%;
+    height: max-content;
     padding: 20px;
 }
 .secondary-text p{
-    font: normal normal 180% 'Inter';
+    font: normal normal 1.6vw 'Inter';
     line-height: 1.2em;
     text-align: left;
 }
 .secondary-button{
-    height: 24%;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .secondary-button a{
-    font: normal normal 2em 'Inter';
+    font: normal normal 1.8vw 'Inter';
     color: black;
     text-decoration: underline;
+    margin-top: 4rem;
 }
 .secondary-button a:hover{
-    color: red
+    color: rgb(110, 0, 0)
 }
 /*------------main 2-------------*/
 #main-3{
@@ -180,39 +182,70 @@ body{
 #multi-offers{
     width: 50%;
     height: 100%;
+    display: flex;
 }
 #multi-offers img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.multi-offers-2 img{
-    transform: scaleX(-1);
-    object-position: 30% center;
+.multi-offers-1{
+    background: url("../imagens/Eletric/Audi/Audi-A6-Avant-e-tron-concept-1.jpg") no-repeat 15%;
+    background-size: cover;
 }
-.multi-offers-1 img{
-    object-position: 10%;
+.multi-offers-2{
+    background: url("../imagens/Eletric/Polestar/polestar6.jpg") no-repeat 70%;
+    background-size: cover;
+}
+.multi-offers-3{
+    background: url("../imagens/Eletric/Lotus/lotus\ eletre\ 3.webp") no-repeat 70%;
+    background-size: cover;
+}
+.multi-offers-4{
+    background: url("../imagens/Eletric/tesla-roadster/Tesla-Roadster\ \(1\).jpg") no-repeat center center;
+    background-size: cover;
+}
+.multi-offers-5{
+    background: url("../imagens/Eletric/rolls-royce-spectre/rr_spectre_046.jpg") no-repeat center center;
+    background-size: cover;
+}
+.multi-offers-6{
+    background: url("../imagens/Eletric/mercedes-benz/Mercedes-EQS-580-SUV-4.webp") no-repeat center center;
+    background-size: cover;
 }
 .cars-title{
-    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    opacity: 0;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.500);
 }
 .cars-title h1{
-    font: normal normal 2.5em 'Neutrons';
-    position: absolute;
-    bottom: -175%;
-    z-index: 1;
+    font: normal normal 2.4vw 'Neutrons';
+    letter-spacing: 8px;
 }
 .cars-title h2{
-    z-index: 1;
-    position: absolute;
-    font: normal normal 1.2em 'Inter';
-    position: absolute;
-    bottom: -180%;
+    font: normal bold 1.2vw 'Inter';
+    padding: 10px 10px 80px 10px;
+}
+.cars-title a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+}
+.cars-title:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 2s;
+    cursor: pointer;
 }
 /*-----------main 3-------------*/
 footer{
@@ -225,8 +258,9 @@ footer{
     background-image: linear-gradient(180deg, rgb(45, 45, 45), rgb(35, 35, 35));
 }
 #info-area{
+    border: 1px solid red;
     width: 50%;
-
+    height: 100%;
     text-align: start;
     color: white;
 }
@@ -245,8 +279,8 @@ footer{
     padding: 10px;
 }
 #github-link a{
-    color: red;
+    color: rgb(255, 255, 255);
 }
 #github-link a:hover{
-    color: rgb(255, 72, 0);
+    color: rgb(110, 0, 0);
 }
