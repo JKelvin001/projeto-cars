@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+    font-family: 'Neutrons';
+    src: url('../font/NeutronsDemoRegular.ttf') format('truetype');
+}
 
 *{
     margin: 0px;
@@ -15,6 +19,7 @@ body{
     height: 100vh;
     width: 99vw;
 }
+/*------------------------------------------------*/
 #header{
     display: flex;
     position: absolute;
@@ -22,7 +27,7 @@ body{
     background-color: rgba(24, 24, 24, 0.800);
     border-radius: 0px 20px 20px 0px;
 
-    width: 6%;
+    width: 7.5%;
     height: 100vh;
     z-index: 1;
     transform: translateX(-4.5em);
@@ -83,24 +88,27 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-
-    opacity: 0;
-    
-    
+       
     position: absolute;
     width: 100%;
     height: 100%;
 }
 #text-offer h1{
-    font: normal bold 4em 'Inter', sans-serif;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.418);
+    opacity: 0;
+
+    font: normal normal 4em 'Neutrons';
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.500);
     text-transform: uppercase;
     color: white;
-    top: 80%;
+    top: 70%;
     
     position: absolute;
     z-index: 1;
+}
+#text-offer .main-text{
+    opacity: 1;
+    transition: opacity 3s;
 }
 /*------------main 1-------------*/
 #main-2{
@@ -112,7 +120,7 @@ body{
 }
 #secondary-offers{
     color: rgb(0, 0, 0);
-    
+
     display: flex;
     width: 65vw;
     height: 80vh;
@@ -129,23 +137,31 @@ body{
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.300);
 }
 .offer-2{
-    background-color: rgba(15, 15, 15, 0.010);
+    background-color: rgba(15, 15, 15, 0.034);
 }
-.offer-2 p{
-    font: normal normal 2.2em 'Inter', sans-serif;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.300);
-    line-height: 1.4em;
-    padding: 0px 40px;
-    text-align: start;
+.secondary-text{
+    height: 60%;
+    padding: 20px;
 }
-.offer-2 a h3{
-    font: normal normal 2.2em 'Inter', sans-serif;
-    margin-top: 4em;
-    text-align: center;
+.secondary-text p{
+    font: normal normal 180% 'Inter';
+    line-height: 1.2em;
+    text-align: left;
+}
+.secondary-button{
+    height: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.secondary-button a{
+    font: normal normal 2em 'Inter';
     color: black;
+    text-decoration: underline;
 }
-.offer-2 h3:hover{
-    color: red;
+.secondary-button a:hover{
+    color: red
 }
 /*------------main 2-------------*/
 #main-3{
@@ -176,6 +192,27 @@ body{
 }
 .multi-offers-1 img{
     object-position: 10%;
+}
+.cars-title{
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cars-title h1{
+    font: normal normal 2.5em 'Neutrons';
+    position: absolute;
+    bottom: -175%;
+    z-index: 1;
+}
+.cars-title h2{
+    z-index: 1;
+    position: absolute;
+    font: normal normal 1.2em 'Inter';
+    position: absolute;
+    bottom: -180%;
 }
 /*-----------main 3-------------*/
 footer{
